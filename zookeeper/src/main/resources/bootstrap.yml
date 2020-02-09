@@ -1,0 +1,16 @@
+# The name of the application
+spring:
+  application:
+    name: config-zookeeper-example
+# The connection string to for your Zookeeper instance.
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+      config:
+        enabled: true
+        root: config
+#        defaultContext: apps
+#        profileSeparator: '::'
+
+server:
+  port: 8081
